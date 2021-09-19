@@ -1,0 +1,40 @@
+Routes for Banks:
+
+http://localhost:5000/
+
+create new bank
+POST http://localhost:5000/bank/create
+request body : 
+{
+	"id" : "4",
+	"userId" :"1",
+	"bankName" : "Central Bank Of India",
+	"bankSymbol" : "CBI"
+}
+
+update bank
+POST http://localhost:5000/bank/update
+request body : 
+{
+
+        "userId": "1",
+        "bankName": "State Bank Of India",
+        "bankSymbol": "SBI",
+        "bankBalance": 1000,
+      
+}
+
+delete bank
+specify id in request paramters
+DEL http://localhost:5000/bank/1
+
+
+get all banks with userId
+GET http://localhost:5000/banks
+headers : {
+    userId : '1'
+}
+
+get bank with bankId
+specify id in request paramters
+GET http://localhost:5000/bank/2
