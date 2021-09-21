@@ -12,6 +12,8 @@ app.get("/", (req, res) => {
 
 require("./routes/bankRoutes")(app);
 require("./routes/categoryRoutes")(app);
+
+// server started
 app.listen(PORT, () => {
   console.log("Express server is running on PORT : " + PORT);
 });
