@@ -110,7 +110,7 @@ exports.update = (req, res) => {
   Bank.updateById(bank, (err, data) => {
     if (err)
       res.status(500).send({
-        message: err.message || "Some error occurred while creating the Bank.",
+        message: err.message || "Some error occurred while updating the Bank.",
       });
     else res.send(data);
   });
