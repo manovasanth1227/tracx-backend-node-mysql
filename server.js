@@ -12,6 +12,7 @@ app.get("/", (req, res) => {
 
 require("./routes/bankRoutes")(app);
 require("./routes/categoryRoutes")(app);
+require("./routes/transactionRoutes")(app);
 
 // server started
 app.listen(PORT, () => {
